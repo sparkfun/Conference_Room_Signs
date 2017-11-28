@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- to have access to local or global scripts -->
+    <script>
+    require(process.cwd() + '/node_modules/benja').paths();
+    </script>
+	
+    <!-- for debugging purpose -->
+    <script>document.documentElement.ondblclick=()=>location.reload();</script>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styler.css">
+    <script src="moment.min.js"></script>
+    <title>Bebop</title>
+  </head>
+  <body>
+	<div class="view" id="view">
+
+	<div class="title-bar"><h3 class="room-name" id="room-name"></h3></div>
+
+	<div class="view1" id="view1">There are no scheduled events today.</div>
+
+	<div class="time-bar">
+	<h3 class="time-text" id="time"></h3>
+	<p class="date-text" id="date"></p>
+	</div>
+
+	</div> 
+  </body>
+  
+  	<!-- logic scripts -->
+	<script src="config.js"></script>
+	<script src="auth_cal.js"></script>	
+
+  
+</html>
